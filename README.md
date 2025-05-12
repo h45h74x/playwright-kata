@@ -8,11 +8,11 @@
 - Clone this repository (see instructions on top)
 - Run `yarn` in terminal, at the root of repository
 
-### Run locally
+### Test locally
 
 Run `npx playwright install` in terminal to download all necessary browsers for testing (in case of failure try running `npx playwright install --with-deps`)
 
-### Run via docker server
+### Test via Docker server
 
 - For running Playwright in a Docker setup, start a local server instance using this command:
 
@@ -35,7 +35,7 @@ Run `npx playwright install` in terminal to download all necessary browsers for 
 
 #### More information
 
-Check out the [Playwright Docker Docs](https://playwright.dev/docs/docker) for more details about using playwright with docker. Or take your docker setup to the next level as shown in the [playwright-ct-docker-demo](https://github.com/mihkeleidast/playwright-ct-docker-demo) project.
+Check out the [Playwright Docker Docs](https://playwright.dev/docs/docker) for more details about using Playwright with Docker. Or take your setup to the next level as shown in the [playwright-ct-docker-demo](https://github.com/mihkeleidast/playwright-ct-docker-demo) project.
 
 ## Verify you are ready for the Kata
 
