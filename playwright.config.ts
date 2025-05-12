@@ -31,6 +31,13 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
+
+    /* Custom connect options for the local docker server */
+    connectOptions: {
+      wsEndpoint: 'ws://127.0.0.1:3000',
+      timeout: 10000,
+      exposeNetwork: 'host.docker.internal,<loopback>'
+    },
   },
 
   snapshotPathTemplate: '{testDir}/{testFileDir}/__screenshots__/{projectName}/{arg}{ext}',
@@ -51,18 +58,8 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chrome',
-      use: {
-        ...devices['Desktop Chrome'],
-        channel: 'chrome',
-      },
-    },
-
-    {
-      name: 'msedge',
-      use: {
-        channel: 'msedge',
-      },
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome']},
     },
     
     {

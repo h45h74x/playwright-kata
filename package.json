@@ -19,7 +19,6 @@
     "test": "playwright test",
     "test:chrome": "playwright test --project='chrome'",
     "test:firefox": "playwright test --project='firefox'",
-    "test:edge": "playwright test --project='msedge'",
     "test:safari": "playwright test --project='webkit'",
     "test:report": "playwright show-report"
   }
